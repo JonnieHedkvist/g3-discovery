@@ -10,7 +10,7 @@ export enum Delays {
   Long = 5000,
 }
 
-console.log('HELLOOO!');
+console.log('STARTING G3 DISCOVERY!');
 
 foundAndLost$.subscribe({
   next: (msg: DiscoveryMessage) => {
