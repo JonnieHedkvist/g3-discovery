@@ -8,7 +8,7 @@ var Delays;
     Delays[Delays["Medium"] = 2000] = "Medium";
     Delays[Delays["Long"] = 5000] = "Long";
 })(Delays = exports.Delays || (exports.Delays = {}));
-console.log('HELLOOO!');
+console.log(new Date(), 'HELLOOO!');
 g3_discovery_1.foundAndLost$.subscribe({
     next: (msg) => {
         console.info('DISCOVERY_MESSAGE_TYPE', msg);
