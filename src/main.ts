@@ -10,11 +10,11 @@ export enum Delays {
   Long = 5000,
 }
 
-console.log('STARTING G3 DISCOVERY!');
+console.log(new Date(), 'STARTING G3 DISCOVERY!');
 
 foundAndLost$.subscribe({
   next: (msg: DiscoveryMessage) => {
-    console.info('DISCOVERY_MESSAGE_TYPE', msg);
+    console.info(new Date(), 'DISCOVERY_MESSAGE_TYPE', msg);
   }
 });
 
