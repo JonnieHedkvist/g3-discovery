@@ -1,4 +1,4 @@
-import * as _mdnsServer from 'mdns-server';
+import * as _mdnsServer from './mdns-server';
 import {networkInterfaces$} from './network-interface-monitor';
 import {
   Observable,
@@ -43,7 +43,7 @@ const _periodicMDNSquery = function(serviceName: string, pollingInterval: number
       });
     };
 
-    const mdnsService = _mdnsServer({
+    const mdnsService: any = _mdnsServer({
       reuseAddr: true, // in case other mdns service is running
       loopback: false, // receive our own mdns messages
       noInit: true // do not initialize on creation
